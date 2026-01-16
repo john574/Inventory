@@ -1,0 +1,2 @@
+# Inventory
+Practicing Inventory Project
