@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Menu, Sun } from "lucide-react";
+import { Bell, Link, Menu, Settings, Sun } from "lucide-react";
 import React from "react";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ return ( <div className="flex justify-between items-center w-full mb-1">
     >
       <Menu className="w-4 h-4" />
     </button>
-  </div>
+  
   <div className="relative">
     <input type="search"placeholder="Star type to search groups & products" className="pl-10 pr-4 py-2 w-50 md:w-80  border-2 border-gray-300 bg-white rounded-lg focus:outline-none focus:border-blue-500" />
 
@@ -24,6 +24,7 @@ return ( <div className="flex justify-between items-center w-full mb-1">
       <Bell className="text-gray-500" size={20}>
       </Bell>
     </div>
+  </div>
   </div>
 
   {/* RIGHT SIDE */}
@@ -41,7 +42,17 @@ return ( <div className="flex justify-between items-center w-full mb-1">
               3
              </span>
           </div>
+          <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
+          <div className="flex items-center gap-3 cursor-pointer">
+            <div className="w-9 h-9">
+              image
+            </div> 
+            <span className="font-semibold">Ed Roh</span>
+          </div>
       </div>
+      <Link href="/settings">
+      <Settings className="cursor-pointer text-gray-500" size={24} />
+      </Link>
     </div>
 </div>
 

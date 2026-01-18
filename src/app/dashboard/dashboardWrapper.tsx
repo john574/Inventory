@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from "@/app/(components)/Navbar";
-
+import Sidebar from "@/app/(components)/Sidebar";
 const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
 return ( <div className="flex bg-gray-100 text-gray-900 w-full min-h-screen">
 
   {/* Sidebar */}
   <div className="w-64 bg-white h-full shadow">
-    Sidebar
+    <Sidebar/>
   </div>
 
   {/* Main Content Wrapper */}
